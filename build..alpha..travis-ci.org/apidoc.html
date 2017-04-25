@@ -81,15 +81,6 @@
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.rekuire.main">
-            function <span class="apidocSignatureSpan">rekuire.</span>main
-            <span class="apidocSignatureSpan">(requirement)</span>
-            </a>
-
-        </li>
-
-        <li>
-
             <a class="apidocElementLiA" href="#apidoc.element.rekuire.path">
             function <span class="apidocSignatureSpan">rekuire.</span>path
             <span class="apidocSignatureSpan">(requirement)</span>
@@ -99,8 +90,8 @@
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.rekuire.toString">
-            function <span class="apidocSignatureSpan">rekuire.</span>toString
+            <a class="apidocElementLiA" href="#apidoc.element.rekuire.scanner">
+            function <span class="apidocSignatureSpan">rekuire.</span>scanner
             <span class="apidocSignatureSpan">()</span>
             </a>
 
@@ -108,34 +99,12 @@
 
     </ol></li>
 
-    <li class="apidocModuleLi"><a href="#apidoc.module.rekuire.ignore">module rekuire.ignore</a><ol>
+    <li class="apidocModuleLi"><a href="#apidoc.module.rekuire.scanner">module rekuire.scanner</a><ol>
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.rekuire.ignore.ignore">
-            function <span class="apidocSignatureSpan">rekuire.</span>ignore
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.rekuire.main">module rekuire.main</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.rekuire.main.main">
-            function <span class="apidocSignatureSpan">rekuire.</span>main
-            <span class="apidocSignatureSpan">(requirement)</span>
-            </a>
-
-        </li>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.rekuire.main.ignore">
-            function <span class="apidocSignatureSpan">rekuire.main.</span>ignore
+            <a class="apidocElementLiA" href="#apidoc.element.rekuire.scanner.scanner">
+            function <span class="apidocSignatureSpan">rekuire.</span>scanner
             <span class="apidocSignatureSpan">()</span>
             </a>
 
@@ -143,35 +112,27 @@
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.rekuire.main.path">
-            function <span class="apidocSignatureSpan">rekuire.main.</span>path
-            <span class="apidocSignatureSpan">(requirement)</span>
+            <a class="apidocElementLiA" href="#apidoc.element.rekuire.scanner.ignore">
+            function <span class="apidocSignatureSpan">rekuire.scanner.</span>ignore
+            <span class="apidocSignatureSpan">(_foldersToIgnore)</span>
             </a>
 
         </li>
 
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.rekuire.path">module rekuire.path</a><ol>
-
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.rekuire.path.path">
-            function <span class="apidocSignatureSpan">rekuire.</span>path
-            <span class="apidocSignatureSpan">(requirement)</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.rekuire.toString">module rekuire.toString</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.rekuire.toString.toString">
-            function <span class="apidocSignatureSpan">rekuire.</span>toString
+            <a class="apidocElementLiA" href="#apidoc.element.rekuire.scanner.rescan">
+            function <span class="apidocSignatureSpan">rekuire.scanner.</span>rescan
             <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.rekuire.scanner.scan">
+            function <span class="apidocSignatureSpan">rekuire.scanner.</span>scan
+            <span class="apidocSignatureSpan">(dir, extensions_)</span>
             </a>
 
         </li>
@@ -233,21 +194,6 @@ var mypath = rek.<span class="apidocCodeKeywordSpan">ignore</span>(&#x27;out&#x2
 
 
     <h2>
-        <a href="#apidoc.element.rekuire.main" id="apidoc.element.rekuire.main">
-        function <span class="apidocSignatureSpan">rekuire.</span>main
-        <span class="apidocSignatureSpan">(requirement)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function rekuire(requirement){
-    return getModule(requirement).module
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
         <a href="#apidoc.element.rekuire.path" id="apidoc.element.rekuire.path">
         function <span class="apidocSignatureSpan">rekuire.</span>path
         <span class="apidocSignatureSpan">(requirement)</span>
@@ -278,15 +224,13 @@ Whats new?
 
 
     <h2>
-        <a href="#apidoc.element.rekuire.toString" id="apidoc.element.rekuire.toString">
-        function <span class="apidocSignatureSpan">rekuire.</span>toString
+        <a href="#apidoc.element.rekuire.scanner" id="apidoc.element.rekuire.scanner">
+        function <span class="apidocSignatureSpan">rekuire.</span>scanner
         <span class="apidocSignatureSpan">()</span>
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">toString = function () {
-    return text;
-}</pre></li>
+    <li>description and source-code<pre class="apidocCodePre">function scanner(){}</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
@@ -294,75 +238,31 @@ Whats new?
 </div>
 
 <div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.rekuire.ignore" id="apidoc.module.rekuire.ignore">module rekuire.ignore</a></h1>
+<h1><a href="#apidoc.module.rekuire.scanner" id="apidoc.module.rekuire.scanner">module rekuire.scanner</a></h1>
 
 
     <h2>
-        <a href="#apidoc.element.rekuire.ignore.ignore" id="apidoc.element.rekuire.ignore.ignore">
-        function <span class="apidocSignatureSpan">rekuire.</span>ignore
+        <a href="#apidoc.element.rekuire.scanner.scanner" id="apidoc.element.rekuire.scanner.scanner">
+        function <span class="apidocSignatureSpan">rekuire.</span>scanner
         <span class="apidocSignatureSpan">()</span>
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">ignore = function (){
-    var args = Array.prototype.slice.call(arguments);
-    scanner.ignore(args);
-    scanResults = scanner.rescan();
-    filesInProject = scanResults.filesInProject;
-    ambiguousFileNames = scanResults.ambiguousFileNames;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-}
-...
-
-```
-
-or you can set it up by code: &#x3c;br/&#x3e;
-```
-var mypath = rek.<span class="apidocCodeKeywordSpan">ignore</span>(&#x27;out&#x27;, &#x27;target&#x27;, &#x27;static/js&#x27;);
-// you should only do it once in your code
-```
-
-
-&#x3c;br/&#x3e;
-...</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.rekuire.main" id="apidoc.module.rekuire.main">module rekuire.main</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.rekuire.main.main" id="apidoc.element.rekuire.main.main">
-        function <span class="apidocSignatureSpan">rekuire.</span>main
-        <span class="apidocSignatureSpan">(requirement)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function rekuire(requirement){
-    return getModule(requirement).module
-}</pre></li>
+    <li>description and source-code<pre class="apidocCodePre">function scanner(){}</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
 
 
     <h2>
-        <a href="#apidoc.element.rekuire.main.ignore" id="apidoc.element.rekuire.main.ignore">
-        function <span class="apidocSignatureSpan">rekuire.main.</span>ignore
-        <span class="apidocSignatureSpan">()</span>
+        <a href="#apidoc.element.rekuire.scanner.ignore" id="apidoc.element.rekuire.scanner.ignore">
+        function <span class="apidocSignatureSpan">rekuire.scanner.</span>ignore
+        <span class="apidocSignatureSpan">(_foldersToIgnore)</span>
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">ignore = function (){
-    var args = Array.prototype.slice.call(arguments);
-    scanner.ignore(args);
-    scanResults = scanner.rescan();
-    filesInProject = scanResults.filesInProject;
-    ambiguousFileNames = scanResults.ambiguousFileNames;
+    <li>description and source-code<pre class="apidocCodePre">ignore = function (_foldersToIgnore){
+    foldersToIgnore = _foldersToIgnore.concat([&#x27;node_modules&#x27;]);
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">...
 }
@@ -384,84 +284,68 @@ var mypath = rek.<span class="apidocCodeKeywordSpan">ignore</span>(&#x27;out&#x2
 
 
     <h2>
-        <a href="#apidoc.element.rekuire.main.path" id="apidoc.element.rekuire.main.path">
-        function <span class="apidocSignatureSpan">rekuire.main.</span>path
-        <span class="apidocSignatureSpan">(requirement)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">path = function (requirement){
-    return getPath(requirement);
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-
-Whats new?
-----------
-####0.1.9
-&#x3e; * Fixed a bug causing the scanner to fail, if the fetched file was named like a default method like &#x27;toString&#x27;
-
-####0.1.8
-&#x3e; * Removed deprecated code - `rek().<span class="apidocCodeKeywordSpan">path</span>(...)` will not work anymore, instead use
- `rek.path(...)`.
-&#x3e; * Fixed an issue of causing `rekuire` not to scan the folders correctly when `node_modules` was a symlink.
-&#x3e; * Added .npmignore to the package - so you won&#x27;t get the test files when adding dependencies
-
-####0.1.7
-&#x3e; * Now you are able to describe ignored folders in your project inside the `package.json` file!
-...</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.rekuire.path" id="apidoc.module.rekuire.path">module rekuire.path</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.rekuire.path.path" id="apidoc.element.rekuire.path.path">
-        function <span class="apidocSignatureSpan">rekuire.</span>path
-        <span class="apidocSignatureSpan">(requirement)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">path = function (requirement){
-    return getPath(requirement);
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-
-Whats new?
-----------
-####0.1.9
-&#x3e; * Fixed a bug causing the scanner to fail, if the fetched file was named like a default method like &#x27;toString&#x27;
-
-####0.1.8
-&#x3e; * Removed deprecated code - `rek().<span class="apidocCodeKeywordSpan">path</span>(...)` will not work anymore, instead use
- `rek.path(...)`.
-&#x3e; * Fixed an issue of causing `rekuire` not to scan the folders correctly when `node_modules` was a symlink.
-&#x3e; * Added .npmignore to the package - so you won&#x27;t get the test files when adding dependencies
-
-####0.1.7
-&#x3e; * Now you are able to describe ignored folders in your project inside the `package.json` file!
-...</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.rekuire.toString" id="apidoc.module.rekuire.toString">module rekuire.toString</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.rekuire.toString.toString" id="apidoc.element.rekuire.toString.toString">
-        function <span class="apidocSignatureSpan">rekuire.</span>toString
+        <a href="#apidoc.element.rekuire.scanner.rescan" id="apidoc.element.rekuire.scanner.rescan">
+        function <span class="apidocSignatureSpan">rekuire.scanner.</span>rescan
         <span class="apidocSignatureSpan">()</span>
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">function toString() { [native code] }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>description and source-code<pre class="apidocCodePre">rescan = function (){
+    return rescan();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+rekuire.path = function(requirement){
+return getPath(requirement);
+};
+
+rekuire.ignore = function(/*args*/){
+var args = Array.prototype.slice.call(arguments);
+scanner.ignore(args);
+scanResults = scanner.<span class="apidocCodeKeywordSpan">rescan</span>();
+filesInProject = scanResults.filesInProject;
+ambiguousFileNames = scanResults.ambiguousFileNames;
+};
+
+/**
+**********************************
+PRIVATE METHODS
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.rekuire.scanner.scan" id="apidoc.element.rekuire.scanner.scan">
+        function <span class="apidocSignatureSpan">rekuire.scanner.</span>scan
+        <span class="apidocSignatureSpan">(dir, extensions_)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">scan = function (dir, extensions_){
+    if(!scanned){
+        baseDir = dir;
+        extensions = extensions_;
+    }
+    rescan();
+    return scanResults;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    scanner.ignore(pkg.rekuire.ignore);
+}
+}
+var _ = require(&#x27;underscore&#x27;);
+var extensions  = [&#x27;.js&#x27;,&#x27;.json&#x27;,&#x27;.coffee&#x27;];
+
+// SCANNING THE FOLDERS AS SOON AS THIS FILE LOADS
+var scanResults = scanner.<span class="apidocCodeKeywordSpan">scan</span>(baseDir,extensions);
+var filesInProject = scanResults.filesInProject;
+var ambiguousFileNames = scanResults.ambiguousFileNames;
+
+module.exports = rekuire;
+
+function rekuire(requirement){
+return getModule(requirement).module
+...</pre></li>
     </ul>
 
 
