@@ -1,4 +1,7 @@
-# api documentation for  [rekuire (v0.1.9)](https://github.com/nadav-dav/rekuire)  [![npm package](https://img.shields.io/npm/v/npmdoc-rekuire.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-rekuire) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-rekuire.svg)](https://travis-ci.org/npmdoc/node-npmdoc-rekuire)
+# npmdoc-rekuire
+
+#### basic api documentation for  [rekuire (v0.1.9)](https://github.com/nadav-dav/rekuire)  [![npm package](https://img.shields.io/npm/v/npmdoc-rekuire.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-rekuire) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-rekuire.svg)](https://travis-ci.org/npmdoc/node-npmdoc-rekuire)
+
 #### 'rekuire' is basically node's 'require' without the relative paths
 
 [![NPM](https://nodei.co/npm/rekuire.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/rekuire)
@@ -68,7 +71,8 @@
     "scripts": {
         "test": "npm install && ./node_modules/.bin/jasmine-node ./test/"
     },
-    "version": "0.1.9"
+    "version": "0.1.9",
+    "bin": {}
 }
 ```
 
